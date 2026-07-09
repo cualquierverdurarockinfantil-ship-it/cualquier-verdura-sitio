@@ -14,7 +14,7 @@ const PILLARS = [
   {
     icon: Zap,
     title: 'Shows en Vivo',
-    text: 'Cada recital es un evento: luces, personajes, juegos y mucha energía. El escenario es nuestro patio de juegos.',
+    text: 'Cada recital es un evento: música, personajes, juegos y mucha energía. El escenario es nuestro patio de juegos.',
     color: 'text-cv-orange',
     bg: 'bg-orange-50',
   },

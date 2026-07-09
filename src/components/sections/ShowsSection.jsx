@@ -12,7 +12,6 @@ const SHOWS = [
     status: 'upcoming',
     freeEntry: true,
     description: 'Presentación del nuevo disco. ¡El show más esperado del año! Festejamos el Día del Niño con rock, juegos y toda la familia.',
-    image: '/assets/show-dia-nino.png',
     photos: [],
   },
   {
@@ -23,7 +22,6 @@ const SHOWS = [
     status: 'festival',
     freeEntry: true,
     description: 'Festival de rock para los más chicos. Música, juegos y diversión.',
-    image: '/assets/show-tacuarock.jpg',
     photos: [],
   },
   {
@@ -31,7 +29,6 @@ const SHOWS = [
     title: 'Shows',
     status: 'compilado',
     description: 'Distintos shows en los que hemos participado.',
-    image: '/assets/show-debut.jpg',
     photos: [],
   },
 ];
