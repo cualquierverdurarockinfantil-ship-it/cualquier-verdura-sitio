@@ -10,6 +10,7 @@ const SHOWS = [
     time: 'A confirmar',
     venue: 'Teatro Cervantes, Coronel Suárez',
     status: 'upcoming',
+    freeEntry: true,
     description: 'Presentación del nuevo disco. ¡El show más esperado del año! Festejamos el Día del Niño con rock, juegos y toda la familia.',
     image: '/assets/show-dia-nino.png',
     photos: [],
@@ -18,19 +19,18 @@ const SHOWS = [
     slug: 'tacuarock',
     title: 'Tacuarock',
     date: 'Próximamente',
-    venue: 'A confirmar',
+    venue: 'Plaza Tambor de Tacuarí',
     status: 'festival',
+    freeEntry: true,
     description: 'Festival de rock para los más chicos. Música, juegos y diversión.',
     image: '/assets/show-tacuarock.jpg',
     photos: [],
   },
   {
-    slug: 'debut',
+    slug: 'compilado',
     title: 'Shows',
-    date: '2024',
-    venue: 'Buenos Aires',
     status: 'compilado',
-    description: 'El primer show de Cualquier Verdura, donde comenzó esta aventura de rock, verduras y diversión.',
+    description: 'Distintos shows en los que hemos participado.',
     image: '/assets/show-debut.jpg',
     photos: [],
   },
@@ -46,7 +46,7 @@ export default function ShowsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           title="Shows"
-          subtitle="Nuestros recitales son experiencias únicas: rock, luces, personajes y mucho juego. ¡Vení a vivir la aventura en vivo!"
+          subtitle="Nuestros recitales son experiencias únicas: rock, música, personajes y mucho juego. ¡Vení a vivir la aventura en vivo!"
           colorClass="text-cv-orange"
         />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">

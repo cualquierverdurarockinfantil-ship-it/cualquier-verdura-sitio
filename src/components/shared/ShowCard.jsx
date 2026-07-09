@@ -16,6 +16,7 @@ const STATUS_STYLES = {
 
 export default function ShowCard({ show, index = 0 }) {
   const status = STATUS_STYLES[show.status] || STATUS_STYLES.upcoming;
+  const isCompilado = show.status === 'compilado';
 
   return (
     <motion.div
@@ -49,7 +50,7 @@ export default function ShowCard({ show, index = 0 }) {
             {show.title}
           </h3>
           <div className="space-y-1.5 text-sm text-muted-foreground">
-            {show.date && (
+            {!isCompilado && show.date && (
               <div className="flex items-center gap-2">
                 <Calendar className="w-4 h-4 text-cv-red" />
                 <span>{show.date}</span>
@@ -61,7 +62,7 @@ export default function ShowCard({ show, index = 0 }) {
                 <span>{show.time}</span>
               </div>
             )}
-            {show.venue && (
+            {!isCompilado && show.venue && (
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-cv-violet" />
                 <span>{show.venue}</span>
@@ -72,6 +73,14 @@ export default function ShowCard({ show, index = 0 }) {
             <p className="mt-3 text-sm text-muted-foreground leading-relaxed line-clamp-2">
               {show.description}
             </p>
+          )}
+          {/* Entrada libre — solo si aplica */}
+          {show.freeEntry && (
+            <div className="mt-3">
+              <span className="inline-flex items-center gap-1 text-xs font-bold text-cv-green bg-cv-green/10 px-3 py-1 rounded-full">
+                🎟 Entrada Libre y Gratuita
+              </span>
+            </div>
           )}
           <div className="mt-4 flex items-center gap-1 text-sm font-semibold text-cv-red group-hover:gap-2 transition-all">
             Ver más <ArrowRight className="w-4 h-4" />

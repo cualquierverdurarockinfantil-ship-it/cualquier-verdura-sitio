@@ -7,7 +7,7 @@ const PILLARS = [
   {
     icon: Music,
     title: 'Música & Humor',
-    text: 'Rock en serio, pero con un giro de diversión. Canciones que los chicos cantan a los gritos y el toque de humor necesario para que todos rían.',
+    text: 'Rock en serio, pero con un giro de diversión. Canciones que los chicos cantan a los gritos y el toque de humor necesario para que todos se diviertan.',
     color: 'text-cv-red',
     bg: 'bg-red-50',
   },
@@ -21,7 +21,7 @@ const PILLARS = [
   {
     icon: Users,
     title: 'Para Toda la Familia',
-    text: 'Los chicos son los protagonistas, pero las familias son parte de la banda. Música que conecta generaciones.',
+    text: 'Los chicos son los protagonistas, pero las familias son parte de la fiesta. Música que conecta generaciones.',
     color: 'text-cv-violet',
     bg: 'bg-purple-50',
   },
