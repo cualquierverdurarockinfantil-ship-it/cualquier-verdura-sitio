@@ -29,17 +29,6 @@ export default function ShowDetail() {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      {/* Hero image — object-position top para que se vea el titulo del flyer */}
-      {show.image && (
-        <div className="w-full h-[30vh] md:h-[45vh] overflow-hidden">
-          <img
-            src={show.image}
-            alt={show.title}
-            className="w-full h-full object-cover object-top"
-          />
-        </div>
-      )}
-
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
         <Link
           to="/#shows"
@@ -53,7 +42,6 @@ export default function ShowDetail() {
             {show.title}
           </h1>
 
-          {/* Info badges — ocultar fecha y venue en compilado */}
           <div className="flex flex-wrap gap-4 mb-4">
             {!isCompilado && show.date && (
               <div className="flex items-center gap-2 text-sm text-muted-foreground bg-muted px-3 py-1.5 rounded-full">
@@ -71,8 +59,8 @@ export default function ShowDetail() {
               </div>
             )}
             {show.freeEntry && (
-              <div className="flex items-center gap-2 text-sm font-bold text-cv-green bg-cv-green/10 px-3 py-1.5 rounded-full">
-                🎟 Entrada Libre y Gratuita
+              <div className="flex items-center gap-2 text-sm font-bold text-cv-red px-3 py-1.5 rounded-full bg-cv-red/10">
+                Entrada libre y gratuita
               </div>
             )}
           </div>
@@ -81,7 +69,6 @@ export default function ShowDetail() {
             {show.description}
           </p>
 
-          {/* Gallery */}
           {show.photos && show.photos.length > 0 ? (
             <div>
               <h2 className="font-display text-2xl tracking-wide text-foreground mb-6">Fotos del show</h2>

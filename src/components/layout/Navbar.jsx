@@ -23,7 +23,8 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="relative z-50 bg-white shadow-sm">
+      {/* Siempre visible al hacer scroll */}
+      <nav className="sticky top-0 z-50 bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             <button onClick={() => scrollTo('#hero')} className="flex items-center gap-3">
