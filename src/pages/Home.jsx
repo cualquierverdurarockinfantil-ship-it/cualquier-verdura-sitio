@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/sections/HeroSection';
@@ -25,6 +26,63 @@ const GALLERY_IMAGES = [
   { src: '/assets/gal-13.jpg', alt: 'Baterista de noche' },
 ];
 
+function ClubBanner() {
+  return (
+    <section className="py-12 px-4">
+      <div className="max-w-5xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="relative overflow-hidden rounded-3xl flex flex-col md:flex-row items-center gap-6 md:gap-10 px-8 py-10"
+          style={{
+            background: "linear-gradient(135deg, #1a0a2e 0%, #3b0764 60%, #92338A 100%)",
+            border: "2px solid #92338A",
+          }}
+        >
+          {/* Círculos decorativos */}
+          <div className="absolute top-0 right-0 w-40 h-40 rounded-full opacity-10" style={{ background: "#E6302B", transform: "translate(30%, -30%)" }} />
+          <div className="absolute bottom-0 left-0 w-32 h-32 rounded-full opacity-10" style={{ background: "#facc15", transform: "translate(-30%, 30%)" }} />
+
+          {/* Ícono / emoji */}
+          <div className="relative z-10 flex-shrink-0 text-center">
+            <div
+              className="w-24 h-24 md:w-28 md:h-28 rounded-2xl flex items-center justify-center text-5xl"
+              style={{ background: "#E6302B", border: "3px solid #facc15" }}
+            >
+              🌿
+            </div>
+          </div>
+
+          {/* Texto */}
+          <div className="relative z-10 flex-1 text-center md:text-left">
+            <p className="font-display text-xs tracking-widest uppercase text-yellow-300 mb-1">
+              Fan club digital
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl text-white tracking-wide mb-2">
+              Club Verdura
+            </h2>
+            <p className="text-white/70 text-base leading-relaxed mb-4 max-w-md">
+              El lugar de los fans de Cualquier Verdura. Escuchá el disco, cantá karaoke,
+              conocé a los personajes, jugá y descargá dibujos para colorear.
+            </p>
+            
+              href="https://club.cualquierverdurarock.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105"
+              style={{ background: "#facc15", color: "#1a0a2e" }}
+            >
+              Entrá al Club Verdura →
+            </a>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
   const scrollToContact = () => {
     const el = document.querySelector('#contacto');
@@ -36,8 +94,8 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <WelcomeSection />
+      <ClubBanner />
       <HistorySection />
-
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <CTABanner
           text="¿Querés que toquemos en tu evento?"
@@ -46,7 +104,6 @@ export default function Home() {
           bgClass="bg-cv-violet"
         />
       </div>
-
       <ShowsSection />
       <GallerySection images={GALLERY_IMAGES} />
       <ContactSection />
