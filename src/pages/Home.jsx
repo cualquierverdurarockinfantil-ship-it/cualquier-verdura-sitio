@@ -12,17 +12,17 @@ import CTABanner from '@/components/shared/CTABanner';
 
 const GALLERY_IMAGES = [
   { src: '/assets/gal-01.jpg', alt: 'Show en vivo de noche' },
-  { src: '/assets/gal-02.jpg', alt: 'Show en salón con público' },
+  { src: '/assets/gal-02.jpg', alt: 'Show en salon con publico' },
   { src: '/assets/gal-03.jpg', alt: 'Show en comunidad escolar' },
   { src: '/assets/gal-04.jpg', alt: 'Show al aire libre' },
-  { src: '/assets/gal-05.jpg', alt: 'Gran evento en salón' },
+  { src: '/assets/gal-05.jpg', alt: 'Gran evento en salon' },
   { src: '/assets/gal-06.jpg', alt: 'Bajista en el escenario' },
   { src: '/assets/gal-07.jpg', alt: 'Cantante en vivo' },
   { src: '/assets/gal-08.jpg', alt: 'Banda completa' },
   { src: '/assets/gal-09.jpg', alt: 'Show outdoor' },
-  { src: '/assets/gal-10.jpg', alt: 'Dúo en escenario' },
+  { src: '/assets/gal-10.jpg', alt: 'Duo en escenario' },
   { src: '/assets/gal-11.jpg', alt: 'Guitarristas en vivo' },
-  { src: '/assets/gal-12.jpg', alt: 'Bajista en acción' },
+  { src: '/assets/gal-12.jpg', alt: 'Bajista en accion' },
   { src: '/assets/gal-13.jpg', alt: 'Baterista de noche' },
 ];
 
@@ -37,25 +37,28 @@ function ClubBanner() {
           transition={{ duration: 0.6 }}
           className="relative overflow-hidden rounded-3xl flex flex-col md:flex-row items-center gap-6 md:gap-10 px-8 py-10"
           style={{
-            background: "linear-gradient(135deg, #1a0a2e 0%, #3b0764 60%, #92338A 100%)",
-            border: "2px solid #92338A",
+            background: 'linear-gradient(135deg, #1a0a2e 0%, #3b0764 60%, #92338A 100%)',
+            border: '2px solid #92338A',
           }}
         >
-          {/* Círculos decorativos */}
-          <div className="absolute top-0 right-0 w-40 h-40 rounded-full opacity-10" style={{ background: "#E6302B", transform: "translate(30%, -30%)" }} />
-          <div className="absolute bottom-0 left-0 w-32 h-32 rounded-full opacity-10" style={{ background: "#facc15", transform: "translate(-30%, 30%)" }} />
+          <div
+            className="absolute top-0 right-0 w-40 h-40 rounded-full opacity-10"
+            style={{ background: '#E6302B', transform: 'translate(30%, -30%)' }}
+          />
+          <div
+            className="absolute bottom-0 left-0 w-32 h-32 rounded-full opacity-10"
+            style={{ background: '#facc15', transform: 'translate(-30%, 30%)' }}
+          />
 
-          {/* Ícono / emoji */}
           <div className="relative z-10 flex-shrink-0 text-center">
             <div
               className="w-24 h-24 md:w-28 md:h-28 rounded-2xl flex items-center justify-center text-5xl"
-              style={{ background: "#E6302B", border: "3px solid #facc15" }}
+              style={{ background: '#E6302B', border: '3px solid #facc15' }}
             >
               🌿
             </div>
           </div>
 
-          {/* Texto */}
           <div className="relative z-10 flex-1 text-center md:text-left">
             <p className="font-display text-xs tracking-widest uppercase text-yellow-300 mb-1">
               Fan club digital
@@ -64,17 +67,17 @@ function ClubBanner() {
               Club Verdura
             </h2>
             <p className="text-white/70 text-base leading-relaxed mb-4 max-w-md">
-              El lugar de los fans de Cualquier Verdura. Escuchá el disco, cantá karaoke,
-              conocé a los personajes, jugá y descargá dibujos para colorear.
+              El lugar de los fans de Cualquier Verdura. Escucha el disco, canta karaoke,
+              conoce a los personajes, juega y descarga dibujos para colorear.
             </p>
             
               href="https://club.cualquierverdurarock.com"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 font-bold text-sm px-6 py-3 rounded-full transition-all duration-300 hover:scale-105"
-              style={{ background: "#facc15", color: "#1a0a2e" }}
+              style={{ background: '#facc15', color: '#1a0a2e' }}
             >
-              Entrá al Club Verdura →
+              Entra al Club Verdura
             </a>
           </div>
         </motion.div>
@@ -98,7 +101,7 @@ export default function Home() {
       <HistorySection />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <CTABanner
-          text="¿Querés que toquemos en tu evento?"
+          text="Queres que toquemos en tu evento?"
           buttonLabel="Contactanos"
           onButtonClick={scrollToContact}
           bgClass="bg-cv-violet"
