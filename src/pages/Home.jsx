@@ -70,7 +70,7 @@ function ClubBanner() {
               El lugar de los fans de Cualquier Verdura. Escucha el disco, canta karaoke,
               conoce a los personajes, juega y descarga dibujos para colorear.
             </p>
-            
+            <a
               href="https://club.cualquierverdurarock.com"
               target="_blank"
               rel="noopener noreferrer"
