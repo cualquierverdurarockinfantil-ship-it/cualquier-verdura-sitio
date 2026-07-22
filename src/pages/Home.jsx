@@ -35,7 +35,7 @@ function ClubBanner() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="relative overflow-hidden rounded-3xl flex flex-col md:flex-row items-center gap-6 md:gap-10 px-8 py-10"
+          className="relative overflow-hidden rounded-3xl px-8 py-10 text-center"
           style={{
             background: 'linear-gradient(135deg, #1a0a2e 0%, #3b0764 60%, #92338A 100%)',
             border: '2px solid #92338A',
@@ -50,27 +50,18 @@ function ClubBanner() {
             style={{ background: '#facc15', transform: 'translate(-30%, 30%)' }}
           />
 
-          <div className="relative z-10 flex-shrink-0 text-center">
-            <div
-              className="w-24 h-24 md:w-28 md:h-28 rounded-2xl flex items-center justify-center text-5xl"
-              style={{ background: '#E6302B', border: '3px solid #facc15' }}
-            >
-              🌿
-            </div>
-          </div>
-
-          <div className="relative z-10 flex-1 text-center md:text-left">
+          <div className="relative z-10">
             <p className="font-display text-xs tracking-widest uppercase text-yellow-300 mb-1">
               Fan club digital
             </p>
-            <h2 className="font-display text-3xl md:text-4xl text-white tracking-wide mb-2">
+            <h2 className="font-display text-3xl md:text-4xl text-white tracking-wide mb-3">
               Club Verdura
             </h2>
-            <p className="text-white/70 text-base leading-relaxed mb-4 max-w-md">
-              El lugar de los fans de Cualquier Verdura. Escucha el disco, canta karaoke,
+            <p className="text-white/70 text-base leading-relaxed mb-6 max-w-xl mx-auto">
+              Nuestra plataforma web. El lugar de los fans de Cualquier Verdura. Escucha el disco, canta karaoke,
               conoce a los personajes, juega y descarga dibujos para colorear.
             </p>
-            <a
+            
               href="https://club.cualquierverdurarock.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -85,7 +76,6 @@ function ClubBanner() {
     </section>
   );
 }
-
 export default function Home() {
   const scrollToContact = () => {
     const el = document.querySelector('#contacto');
