@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react';import { motion } from 'framer-motion';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/sections/HeroSection';
@@ -24,7 +24,33 @@ const GALLERY_IMAGES = [
   { src: '/assets/gal-12.jpg', alt: 'Bajista en acción' },
   { src: '/assets/gal-13.jpg', alt: 'Baterista de noche' },
 ];
-
+function ClubBanner() {
+  return (
+    <section className="py-12 px-4">
+      <div className="max-w-5xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="relative overflow-hidden rounded-3xl px-8 py-10 text-center"
+          style={{ background: 'linear-gradient(135deg, #1a0a2e 0%, #3b0764 60%, #92338A 100%)', border: '2px solid #92338A' }}
+        >
+          <div className="relative z-10">
+            <p className="font-display text-xs tracking-widest uppercase text-yellow-300 mb-1">Fan club digital</p>
+            <h2 className="font-display text-3xl md:text-4xl text-white tracking-wide mb-3">Club Verdura</h2>
+            <p className="text-white/70 text-base leading-relaxed mb-6 max-w-xl mx-auto">
+              Nuestra plataforma web. El lugar de los fans de Cualquier Verdura. Escucha el disco, canta karaoke, conoce a los personajes, juega y descarga dibujos para colorear.
+            </p>
+            <a href="https://club.cualquierverdurarock.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-bold text-sm px-6 py-3 rounded-full" style={{ background: '#facc15', color: '#1a0a2e' }}>
+              Entra al Club Verdura
+            </a>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
 export default function Home() {
   const scrollToContact = () => {
     const el = document.querySelector('#contacto');
@@ -35,8 +61,8 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
-      <ClubBanner />
       <WelcomeSection />
+      <ClubBanner />
       <HistorySection />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
