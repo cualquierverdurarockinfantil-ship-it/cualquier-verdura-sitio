@@ -35,6 +35,7 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
+      <ClubBanner />
       <WelcomeSection />
       <HistorySection />
 
