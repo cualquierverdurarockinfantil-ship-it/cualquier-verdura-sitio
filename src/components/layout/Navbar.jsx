@@ -7,6 +7,7 @@ const LOGO_URL = '/assets/logo.png';
 const NAV_LINKS = [
   { label: 'Inicio', href: '#hero' },
   { label: 'Historia', href: '#historia' },
+  { label: 'Videoclips', href: '#videoclips' },
   { label: 'Shows', href: '#shows' },
   { label: 'Galería', href: '#galeria' },
   { label: 'Contacto', href: '#contacto' },

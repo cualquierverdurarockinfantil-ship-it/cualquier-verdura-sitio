@@ -4,6 +4,7 @@ import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/sections/HeroSection';
 import WelcomeSection from '@/components/sections/WelcomeSection';
 import HistorySection from '@/components/sections/HistorySection';
+import VideoclipsSection from '@/components/sections/VideoclipsSection';
 import ShowsSection from '@/components/sections/ShowsSection';
 import GallerySection from '@/components/sections/GallerySection';
 import ContactSection from '@/components/sections/ContactSection';
@@ -74,6 +75,7 @@ export default function Home() {
         />
       </div>
 
+      <VideoclipsSection />
       <ShowsSection />
       <GallerySection images={GALLERY_IMAGES} />
       <ContactSection />
