@@ -28,7 +28,7 @@ export const VIDEOCLIPS = [
     youtubeId: '_CIjJpfptaA',
     cover: '',
     story:
-      '"Un Buen Plan" fue grabado y producido en 2024, bajo la dirección de Lobo Ngero Films y con edición de Resch Producciones. Delante de cámara actúa parte de nuestra propia familia y amigos de la banda, que se sumaron a la aventura con muchas ganas. Para las imágenes de fondo se usaron tomas de la cuarta edición de Tacuarock, el festival que forma parte de nuestra historia. Como todo en Cualquier Verdura, este videoclip fue una producción totalmente independiente, hecha con recursos propios.',
+      '"Un Buen Plan" fue grabado en 2024, bajo la dirección de Lobo Negro Films y con edición de Resch Producciones. Delante de cámara actúa parte de nuestra propia familia y amigos de la banda, que se sumaron a la aventura con muchas ganas. Para las imágenes de fondo se usaron tomas de la cuarta edición de Tacuarock, el festival que forma parte de nuestra historia. El videoclip fue producido íntegramente por Cualquier Verdura.',
     karaokeUrl: CLUB_URL,
     backstage: [],
   },
@@ -40,7 +40,7 @@ export const VIDEOCLIPS = [
     youtubeId: 'ijV2LFd25qw',
     cover: '',
     story:
-      '"La Gran Manada" se grabó en 2025, otra vez con Lobo Ngero Films en la dirección y Resch Producciones en la edición. Esta vez sumamos a más gente de nuestra comunidad: el taller de percusión de Centro Blanco y Negro participó en la grabación de audio y en escenas del video, y el taller de teatro del mismo centro puso a sus actores y actrices como protagonistas del clip. Como siempre, se trató de una producción totalmente independiente, hecha con recursos propios de Cualquier Verdura.',
+      '"La Gran Manada" se grabó en 2025, dirigido por Lobo Negro Films y editado por Resch Producciones. Sumamos a más gente de nuestra comunidad: el taller de percusión de Centro Blanco y Negro participó en la grabación de audio y en escenas del video, y el taller de teatro del mismo club puso a sus actores y actrices como protagonistas del clip. El videoclip fue producido íntegramente por Cualquier Verdura.',
     karaokeUrl: CLUB_URL,
     backstage: [],
   },
