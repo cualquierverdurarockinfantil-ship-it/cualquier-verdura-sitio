@@ -1,10 +1,10 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Mic2, Image as ImageIcon, PlayCircle } from 'lucide-react';
+import { ArrowLeft, Mic2, PlayCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-import { getVideoclipCover, getVideoclipEmbedUrl } from '@/lib/videoclipsData';
+import { getVideoclipEmbedUrl } from '@/lib/videoclipsData';
 
 const VIDEOCLIPS =
   typeof window !== 'undefined' && window.__VIDEOCLIPS_DATA__ ? window.__VIDEOCLIPS_DATA__ : [];
@@ -43,12 +43,15 @@ export default function VideoclipDetail() {
         </Link>
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-          {/* Encabezado */}
-          <div className="aspect-video rounded-2xl overflow-hidden mb-6">
-            <img
-              src={getVideoclipCover(videoclip)}
-              alt={videoclip.title}
-              className="w-full h-full object-cover"
+          {/* Encabezado con el video embebido */}
+          <div className="aspect-video rounded-2xl overflow-hidden mb-6 shadow-lg">
+            <iframe
+              className="w-full h-full"
+              src={getVideoclipEmbedUrl(videoclip)}
+              title={videoclip.title}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
             />
           </div>
 
@@ -76,18 +79,6 @@ export default function VideoclipDetail() {
               </p>
             </div>
           )}
-
-          {/* Reproductor */}
-          <div className="aspect-video rounded-2xl overflow-hidden mb-10 shadow-lg">
-            <iframe
-              className="w-full h-full"
-              src={getVideoclipEmbedUrl(videoclip)}
-              title={videoclip.title}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            />
-          </div>
 
           {/* Botón destacado hacia el Club Verdura */}
           <motion.a
