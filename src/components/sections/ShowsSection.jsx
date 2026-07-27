@@ -7,7 +7,7 @@ const SHOWS = [
     slug: 'dia-del-nino',
     title: 'Día del Niño',
     date: '16 de agosto',
-    time: 'A confirmar',
+    time: '16h',
     venue: 'Teatro Español, Coronel Suárez',
     status: 'upcoming',
     freeEntry: true,
