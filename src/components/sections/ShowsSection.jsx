@@ -8,7 +8,7 @@ const SHOWS = [
     title: 'Día del Niño',
     date: '16 de agosto',
     time: 'A confirmar',
-    venue: 'Teatro Cervantes, Coronel Suárez',
+    venue: 'Teatro Español, Coronel Suárez',
     status: 'upcoming',
     freeEntry: true,
     description: 'Presentación del nuevo disco. ¡El show más esperado del año! Festejamos el Día del Niño con rock, juegos y toda la familia.',

@@ -35,7 +35,7 @@ export default function HeroSection() {
                 </div>
               </div>
               <div className="text-center sm:text-right">
-                <p className="text-sm font-semibold">16 de agosto · Teatro Cervantes</p>
+                <p className="text-sm font-semibold">16 de agosto · Teatro Español</p>
                 <p className="text-sm font-semibold mb-1">Coronel Suárez</p>
                 <p className="text-sm font-bold text-cv-red">Entrada libre y gratuita</p>
               </div>
@@ -65,7 +65,7 @@ export default function HeroSection() {
             <p className="text-xs font-bold tracking-widest uppercase mb-0.5">Próximo show en vivo</p>
             <h3 className="font-display text-xl tracking-wider leading-tight mb-0.5">Día del Niño</h3>
             <p className="text-xs text-cv-red/80 mb-0.5">¡¡Presentación del nuevo disco!!</p>
-            <p className="text-xs font-semibold">16 de agosto — Teatro Cervantes, Coronel Suárez</p>
+            <p className="text-xs font-semibold">16 de agosto — Teatro Español, Coronel Suárez</p>
             <p className="text-xs font-bold text-cv-red mt-1">Entrada libre y gratuita</p>
           </motion.div>
         </div>
