@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Analytics } from "@vercel/analytics/react"
 import PageNotFound from './lib/PageNotFound';
 import ScrollToTop from './components/ScrollToTop';
+import CampaignBanner from '@/components/shared/CampaignBanner';
 import Home from '@/pages/Home';
 import ShowDetail from '@/pages/ShowDetail';
 import VideoclipDetail from '@/pages/VideoclipDetail';
@@ -14,6 +15,7 @@ function App() {
     <QueryClientProvider client={queryClientInstance}>
       <Router>
         <ScrollToTop />
+        <CampaignBanner />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/show/:slug" element={<ShowDetail />} />
