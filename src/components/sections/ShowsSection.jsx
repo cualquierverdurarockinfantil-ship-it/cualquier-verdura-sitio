@@ -4,18 +4,6 @@ import ShowCard from '@/components/shared/ShowCard';
 
 const SHOWS = [
   {
-    slug: 'dia-del-nino',
-    title: 'Día del Niño',
-    date: '16 de agosto',
-    time: '16h',
-    venue: 'Teatro Español, Coronel Suárez',
-    status: 'upcoming',
-    freeEntry: true,
-    description: 'Presentación del nuevo disco. ¡El show más esperado del año! Festejamos el Día del Niño con rock, juegos y toda la familia.',
-    image: '/assets/show-dia-nino.png',
-    photos: [],
-  },
-  {
     slug: 'tacuarock',
     title: 'Tacuarock',
     date: 'Próximamente',
@@ -49,9 +37,11 @@ export default function ShowsSection() {
           subtitle="Nuestros recitales son experiencias únicas: rock, música, personajes y mucho juego. ¡Vení a vivir la aventura en vivo!"
           colorClass="text-cv-orange"
         />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        <div className="flex flex-wrap justify-center gap-6 lg:gap-8">
           {SHOWS.map((show, i) => (
-            <ShowCard key={show.slug} show={show} index={i} />
+            <div key={show.slug} className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-22px)] max-w-sm">
+              <ShowCard show={show} index={i} />
+            </div>
           ))}
         </div>
       </div>
